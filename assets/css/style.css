@@ -934,6 +934,11 @@ ul.dropdown li a:hover {
   text-align: center;
 }
 
+.affordableSection {
+  background-color: #e9e9e9;
+  padding: 50px 0 100px;
+}
+
 .testimonialSection {
   background-color: #f1f1f1;
   padding: 55px 0;
