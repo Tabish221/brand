@@ -26,15 +26,6 @@ $(document).ready(function() {
 });
 
 
-// Fancy Media
-$('.fancybox-media').fancybox({
-    openEffect: 'none',
-    closeEffect: 'none',
-    helpers: {
-        media: {}
-    }
-});
-
 
 // Slider For
 $('.slider-for').slick({
@@ -75,7 +66,8 @@ $(window).scroll(function() {
 
 // Normal Slider
 $('.index-slider').slick({
-  dots: false,
+  dots: true,
+  arrows: false,
   infinite: true,
   speed: 300,
   slidesToShow: 1,

@@ -209,15 +209,154 @@
 
       <section class="cta cta1">
          <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
                <div class="col-md-4">
                   <div class="cta-hd">
-                     <h6>Limited</h6>
+                     <h6>Limited Time Offer</h6>
+                     <h5>Get Your Custom <span>Logo Designed</span> in jsut</h5>
+                  </div>
+               </div>
+
+               <div class="col-md-2">
+                  <div class="cta-priceTag">
+                     <span>$35</span>
+                  </div>
+               </div>
+
+               <div class="col-md-6">
+                  <div class="cta-main">
+                     <div class="cta-tel">
+                        <a href="tel:1-23-417-0188">
+                           <div class="icon">
+                              <img src="assets/images/cta1/phone.png" alt="Phone Icon">
+                           </div>
+                           1-323-417-0188
+                        </a>
+                     </div>
+
+                     <div class="cta-btn">
+                        <a href="#">
+                           <span>CHAT NOW</span> TO AVAIL THIS OFFER
+                        </a>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
       </section>
+
+      <section class="awardSection">
+         <div class="container">
+            <div class="awardSec-hd mn-hd">
+               <h5>Our Award</h5>
+               <h6><span>Winning Logo Portfolio</span></h6>
+            </div>
+
+            <div class="awardSec-main">
+               <div class="index-slider">
+                  <div class="">
+                     <img src="assets/images/award/img.png" alt="Image">
+                  </div>
+                  <div class="">
+                     <img src="assets/images/award/img.png" alt="Image">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class=""></section>
+
+      <section class="cta cta2">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-md-6">
+                  <div class="cta-hd">
+                     <h4>Ready to Get Your</h4>
+                     <h5 class="pt-0">Logo Design Done?</h5>
+                     <p>Discuss with our experts today & choose the best package.</p>
+                  </div>
+               </div>
+
+               <div class="col-md-6">
+                  <div class="cta-main">
+                     <div class="cta-tel">
+                        <a href="tel:1-23-417-0188">
+                           <div class="icon">
+                              <img src="assets/images/cta1/picon.png" alt="Phone Icon">
+                           </div>
+                           <span>
+                              <em>CALL NOW:</em>
+                              1-323-417-0188
+                           </span>
+                        </a>
+                     </div>
+
+                     <div class="cta-btn">
+                        <a href="#">
+                           <span>CHAT NOW</span> TO AVAIL THIS OFFER
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="testimonialSection">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-5">
+                  <div class="testiSec-hd mn-hd">
+                     <h5>Testimonials</h5>
+                     <h6>
+                        <span>What Our <br> Customers <br> Are Saying</span>
+                     </h6>
+                  </div>
+               </div>
+
+               <div class="col-md-7">
+                  <div class="testiSec-cont">
+                     <div class="icon">
+                        <img src="assets/images/testi/img1.png" alt="COMPANY ICON">
+                     </div>
+                     <p>“We approached 360 Apps Development to design a new logo for our company re-branding exercise and I am delighted with both the results and the design process. They took my input and feedback constructively and utilized it with their creative vision to develop a high-quality result."</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="section3">
+         <div class="container">
+            <ul>
+               <li>
+                  <img src="assets/images/sec3/icon1.png" alt="ICON">
+               </li>
+
+               <li>
+                  <img src="assets/images/sec3/icon2.png" alt="ICON">
+               </li>
+
+               <li>
+                  <img src="assets/images/sec3/icon3.png" alt="ICON">
+               </li>
+
+               <li>
+                  <img src="assets/images/sec3/icon4.png" alt="ICON">
+               </li>
+
+               <li>
+                  <img src="assets/images/sec3/icon5.png" alt="ICON">
+               </li>
+
+               <li>
+                  <img src="assets/images/sec3/icon6.png" alt="ICON">
+               </li>
+            </ul>
+         </div>
+      </section>
+
 
 
       <?php include("includes/footer.php"); ?>
