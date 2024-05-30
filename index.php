@@ -11,12 +11,61 @@
 <body>
    <?php include("includes/header.php"); ?>
 
+
    <section class="mainBanner" style="background-image: url(assets/images/banner/bg-banner.jpg);">
       <div class="container">
          <div class="row">
             <div class="col-md-6">
                <div class="banner-timer">
-                  <img src="assets/images/banner/timer.png" alt="Timer">
+                  <!-- <img src="assets/images/banner/timer.png" alt="Timer"> -->
+
+                  <div id="countdown">
+                     <div class="countdown__container">
+                        <div class="countdown__el d-none">
+                           <div class="countdown__time flip" id="days">
+                              <span class="count curr top">00</span>
+                              <span class="count next top">00</span>
+                              <span class="count curr bottom">00</span>
+                              <span class="count next bottom">00</span>
+                           </div>
+                           <span class="countdown__label">Días</span>
+                        </div>
+                        <div class="countdown__el">
+                           <span class="countdown__label">HOURS</span>
+                           <div class="countdown__time flip" id="hours">
+                              <span class="count curr top">00</span>
+                              <span class="count next top">00</span>
+                              <span class="count curr bottom">00</span>
+                              <span class="count next bottom">00</span>
+                           </div>
+                        </div>
+                        <div class="countdown__sep">
+                           :
+                        </div>
+                        <div class="countdown__el">
+                           <span class="countdown__label">MINUTES</span>
+                           <div class="countdown__time flip" id="mins">
+                              <span class="count curr top">00</span>
+                              <span class="count next top">00</span>
+                              <span class="count curr bottom">00</span>
+                              <span class="count next bottom">00</span>
+                           </div>
+                        </div>
+                        <div class="countdown__sep">
+                           :
+                        </div>
+                        <div class="countdown__el">
+                           <span class="countdown__label">SECONDS</span>
+                           <div class="countdown__time flip" id="seconds">
+                              <span class="count curr top">00</span>
+                              <span class="count next top">00</span>
+                              <span class="count curr bottom">00</span>
+                              <span class="count next bottom">00</span>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
                </div>
 
                <div class="banner-cont">
@@ -50,6 +99,7 @@
          </div>
       </div>
    </section>
+
 
    <section class="section1">
       <div class="container">
@@ -212,16 +262,15 @@
    <section class="cta cta1">
       <div class="container">
          <div class="row align-items-center">
-            <div class="col-md-4">
-               <div class="cta-hd">
-                  <h6>Limited Time Offer</h6>
-                  <h5>Get Your Custom <span>Logo Designed</span> in jsut</h5>
-               </div>
-            </div>
-
-            <div class="col-md-2">
-               <div class="cta-priceTag">
-                  <span>$35</span>
+            <div class="col-md-6">
+               <div class="d-flex gap-5 align-items-center cta-left">
+                  <div class="cta-hd">
+                     <h6>Limited Time Offer</h6>
+                     <h5>Get Your Custom <br> <span>Logo Designed</span> in jsut</h5>
+                  </div>
+                  <div class="cta-priceTag">
+                     <span>$35</span>
+                  </div>
                </div>
             </div>
 
@@ -269,16 +318,29 @@
 
    <section class="affordableSection">
       <div class="container">
+         <div class="a-icon1">
+            <img src="assets/images/aff/icon1.png" alt="AFTER IMAGES">
+         </div>
+         <div class="a-icon2">
+            <img src="assets/images/aff/icon2.png" alt="AFTER IMAGES">
+         </div>
+         <div class="a-icon3">
+            <img src="assets/images/aff/icon3.png" alt="AFTER IMAGES">
+         </div>
+         <div class="a-icon4">
+            <img src="assets/images/aff/icon4.png" alt="AFTER IMAGES">
+         </div>
+
          <div class="affSec-hd mn-hd text-center">
             <h5>Affordable</h5>
             <h6><span>Custom Logo Design Packages</span></h6>
          </div>
          <div class="affSec-main">
-            <div class="row">
+            <div class="row align-items-center">
                <div class="col-md-6">
                   <div class="affSec-cont">
                      <div class="">
-                        <ul>
+                        <ul class="affSec-listing">
                            <li>5 Custom Logo Design Concepts</li>
                            <li>By 2 Designers</li>
                            <li>UNLIMITED Revisions</li>
@@ -309,11 +371,93 @@
 
                         <div class="affSec-call">
                            <a href="tel:+44 (800) 0418230">
-                              <span>Call Us at <i class="fas fa-comment-dots"></i></span>
+                              <span>Call Us at <i class="fas fa-phone"></i></span>
                               +44 (800) 0418230
                            </a>
                         </div>
                      </div>
+                  </div>
+               </div>
+
+               <div class="col-md-6">
+                  <div class="affSec-package">
+                     <ul>
+                        <li class="affSec-card current" data-targetit='box-pkg1'>
+                           <div class="affSec-card-badge">Best Seller</div>
+
+                           <div class="affSec-card-left">
+                              <div class="affSec-card-check">
+                                 <i class="far fa-circle"></i>
+                              </div>
+
+                              <div class="affSec-card-cont">
+                                 <h6>Basic Logo</h6>
+                                 <span>50% OFF <s>$429</s></span>
+                              </div>
+                           </div>
+
+                           <div class="affSec-card-price">
+                              <span>$35</span>
+                           </div>
+                        </li>
+
+                        <li class="affSec-card" data-targetit='box-pkg2'>
+                           <div class="affSec-card-badge">Best Seller</div>
+
+                           <div class="affSec-card-left">
+                              <div class="affSec-card-check">
+                                 <i class="far fa-circle"></i>
+                              </div>
+
+                              <div class="affSec-card-cont">
+                                 <h6>Startup Logo</h6>
+                                 <span>50% OFF <s>$429</s></span>
+                              </div>
+                           </div>
+
+                           <div class="affSec-card-price">
+                              <span>$125</span>
+                           </div>
+                        </li>
+
+                        <li class="affSec-card" data-targetit='box-pkg3'>
+                           <div class="affSec-card-badge">Best Seller</div>
+
+                           <div class="affSec-card-left">
+                              <div class="affSec-card-check">
+                                 <i class="far fa-circle"></i>
+                              </div>
+
+                              <div class="affSec-card-cont">
+                                 <h6>Professional Logo</h6>
+                                 <span>50% OFF <s>$429</s></span>
+                              </div>
+                           </div>
+
+                           <div class="affSec-card-price">
+                              <span>$175</span>
+                           </div>
+                        </li>
+
+                        <li class="affSec-card" data-targetit='box-pkg4'>
+                           <div class="affSec-card-badge">Best Seller</div>
+
+                           <div class="affSec-card-left">
+                              <div class="affSec-card-check">
+                                 <i class="far fa-circle"></i>
+                              </div>
+
+                              <div class="affSec-card-cont">
+                                 <h6>Platinum Logo</h6>
+                                 <span>50% OFF <s>$429</s></span>
+                              </div>
+                           </div>
+
+                           <div class="affSec-card-price">
+                              <span>$200</span>
+                           </div>
+                        </li>
+                     </ul>
                   </div>
                </div>
             </div>
@@ -359,6 +503,10 @@
 
    <section class="testimonialSection">
       <div class="container">
+         <div class="afterImage">
+            <img src="assets/images/testi/cbg.png" alt="After Image">
+         </div>
+
          <div class="row">
             <div class="col-md-5">
                <div class="testiSec-hd mn-hd">
@@ -410,6 +558,8 @@
          </ul>
       </div>
    </section>
+
+
 
 
 

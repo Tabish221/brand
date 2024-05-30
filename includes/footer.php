@@ -8,27 +8,28 @@
    		</div>
    		<div class="col-md-7">
    			<div class="footer-form">
-   				<form>
+				
+   				<form  id="contactForm">
 					<h6>Let's get started!</h6>
 					<p>Contact us by using the form below or send us an email.</p>
 
 					<div class="footerForm-feild">
 						<div class="icon"><i class="fas fa-user"></i></div>
-						<input type="text" placeholder="Enter Your Name">
+						<input type="text" name='ff_name' placeholder="Enter Your Name">
 					</div>
 
 					<div class="footerForm-feild">
 						<div class="icon"><i class="fas fa-envelope"></i></div>
-						<input type="email" placeholder="Email Address">
+						<input type="email" name='ff_email' placeholder="Email Address">
 					</div>
 
 					<div class="footerForm-feild">
 						<div class="icon"><i class="fas fa-phone"></i></div>
-						<input type="text" placeholder="Phone Number">
+						<input type="text" name='ff_phone' placeholder="Phone Number">
 					</div>
 
 					<div class="footerForm-btn">
-						<button>
+						<button class="footer-formBtn">
 							Send Now
 							<div class="icon">
 								<i class="fas fa-arrow-circle-right"></i>
