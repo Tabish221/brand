@@ -339,7 +339,46 @@
             <div class="row align-items-center">
                <div class="col-md-6">
                   <div class="affSec-cont">
-                     <div class="">
+                     <div class="box-pkg1 showfirst">
+                        <ul class="affSec-listing">
+                           <li>5 Custom Logo Design Concepts</li>
+                           <li>By 2 Designers</li>
+                           <li>UNLIMITED Revisions</li>
+                           <li>48 to 72 hours TAT</li>
+                           <li>Rush Delivery Available</li>
+                           <li>100% Satisfaction Guarantee</li>
+                           <li>100% Unique Design Guarantee</li>
+                           <li>100% Money Back Guarantee *</li>
+                        </ul>
+                     </div>
+
+                     <div class="box-pkg2">
+                        <ul class="affSec-listing">
+                           <li>5 Custom Logo Design Concepts</li>
+                           <li>By 2 Designers</li>
+                           <li>UNLIMITED Revisions</li>
+                           <li>48 to 72 hours TAT</li>
+                           <li>Rush Delivery Available</li>
+                           <li>100% Satisfaction Guarantee</li>
+                           <li>100% Unique Design Guarantee</li>
+                           <li>100% Money Back Guarantee *</li>
+                        </ul>
+                     </div>
+
+                     <div class="box-pkg3">
+                        <ul class="affSec-listing">
+                           <li>5 Custom Logo Design Concepts</li>
+                           <li>By 2 Designers</li>
+                           <li>UNLIMITED Revisions</li>
+                           <li>48 to 72 hours TAT</li>
+                           <li>Rush Delivery Available</li>
+                           <li>100% Satisfaction Guarantee</li>
+                           <li>100% Unique Design Guarantee</li>
+                           <li>100% Money Back Guarantee *</li>
+                        </ul>
+                     </div>
+
+                     <div class="box-pkg4">
                         <ul class="affSec-listing">
                            <li>5 Custom Logo Design Concepts</li>
                            <li>By 2 Designers</li>
@@ -558,9 +597,6 @@
          </ul>
       </div>
    </section>
-
-
-
 
 
    <?php include("includes/footer.php"); ?>

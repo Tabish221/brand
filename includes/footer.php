@@ -9,27 +9,27 @@
    		<div class="col-md-7">
    			<div class="footer-form">
 				
-   				<form  id="contactForm">
+   				<form id="contactForm" method="Post">
 					<h6>Let's get started!</h6>
 					<p>Contact us by using the form below or send us an email.</p>
 
 					<div class="footerForm-feild">
 						<div class="icon"><i class="fas fa-user"></i></div>
-						<input type="text" name='ff_name' placeholder="Enter Your Name">
+						<input type="text" class="feildName" name='Name' placeholder="Enter Your Name" require>
 					</div>
 
 					<div class="footerForm-feild">
 						<div class="icon"><i class="fas fa-envelope"></i></div>
-						<input type="email" name='ff_email' placeholder="Email Address">
+						<input type="email" class="feildEmail" name='Email' placeholder="Email Address" require>
 					</div>
 
 					<div class="footerForm-feild">
 						<div class="icon"><i class="fas fa-phone"></i></div>
-						<input type="text" name='ff_phone' placeholder="Phone Number">
+						<input type="text" class="feildPhone" name='Phone' placeholder="Phone Number" >
 					</div>
 
 					<div class="footerForm-btn">
-						<button class="footer-formBtn">
+						<button class="footer-formBtn" type="submit" name="submit-main">
 							Send Now
 							<div class="icon">
 								<i class="fas fa-arrow-circle-right"></i>

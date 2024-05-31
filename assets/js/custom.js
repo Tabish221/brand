@@ -116,15 +116,52 @@ $('ul.menu li a').each(function() {
 if ($(window).width() < 825) {
 }
 
+let showPopup = false;
 
+$(window).on('beforeunload', function(e) {
+  // Show the popup
+  
+  if (!showPopup) {
+      // Show the custom popup and overlay
+      $('.popup-default').show();
+      $('.overlay').show();
+
+      // Prevent the default unload behavior
+      e.preventDefault();
+      return '';
+  }
+
+});
+
+$('.overlay').on('click', function() {
+  // Hide the popup and overlay
+  $('.overlay, .popup-default, .custom-layout').hide();
+});
+
+$('.popup-default .popup-close').on('click', function() {
+  // Allow the unload behavior
+  showPopup = true;
+  window.location.reload(); // Simulate a reload to allow the page to close
+});
+
+$(document).on('click', '.custom-popupBtn', function(){
+  $('.custom-layout').show();
+  $('.overlay').show();
+});
+
+$('.custom-layout .popup-close').on('click', function() {
+  $('.custom-layout').hide();
+  $('.overlay').hide();
+});
 
 
 $(document).on('click', '.footer-formBtn', function(e){
     e.preventDefault();
+    var gParent = $(this).parent().parent()
 
-    var nameInput = $('[name="ff_name"]');
-    var emailInput = $('[name="ff_email"]');
-    var phoneInput = $('[name="ff_phone"]');
+    var nameInput = gParent.find('.feildName');
+    var emailInput = gParent.find('.feildEmail');
+    var phoneInput = gParent.find('.feildPhone');
 
     var name = nameInput.val();
     var email = emailInput.val();
@@ -152,15 +189,16 @@ $(document).on('click', '.footer-formBtn', function(e){
     phoneInput.removeClass('error');
 
     $.ajax({
-        type: "submit-main",
         url: "mail.php",
+        method: 'POST',
         data: {
-            name : name,
-            email : email,
-            phone : phone
+            action: 'submit-mail',
+            Name : name,
+            Email : email,
+            Phone : phone
         },
         success: function (response) {
-            
+            console.log(response)
         }
     });
 

@@ -1,3 +1,224 @@
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.76);
+  z-index: 7;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.popup-layout {
+  width: 1050px;
+  height: 575px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  z-index: 8;
+  background: #022ba7;
+  border-radius: 15px;
+  display: none;
+}
+.popup-layout .popup-head {
+  margin-bottom: 3rem;
+}
+.popup-layout .popup-head h5 {
+  color: #FFFFFF;
+  font-size: 33px;
+  font-weight: 200;
+}
+.popup-layout .popup-head h5 strong {
+  font-weight: 600;
+}
+.popup-layout .popup-head h4 {
+  color: #FFFFFF;
+  font-size: 65px;
+  font-weight: 300;
+}
+.popup-layout .popup-head h4 strong {
+  font-weight: 600;
+}
+.popup-layout .contact-info {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #b9caff;
+  margin-left: 20px;
+  position: relative;
+  z-index: 1;
+}
+.popup-layout .contact-info:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.popup-layout .contact-info h6 {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.popup-layout .contact-info a {
+  color: #dddddd;
+  font-size: 16px;
+  font-weight: 300;
+}
+.popup-layout .contact-info a:hover {
+  color: #fca007;
+}
+
+.popup-close {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 20px;
+  color: #FFFFFF;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup-close:hover {
+  background-color: #db1e5a;
+  color: #fff;
+}
+
+.popup-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 2.5rem 3rem;
+  box-shadow: inset 0px 0px 250px 0px rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.element {
+  position: absolute;
+}
+
+.element-22 {
+  right: -120px;
+  bottom: 0;
+}
+
+.element-23 {
+  left: -70px;
+  bottom: -70px;
+}
+
+.element-24 {
+  top: 100px;
+  right: 200px;
+}
+
+.custom-layout {
+  display: none;
+  background-image: url(../images/pop1-bg.png);
+}
+.custom-layout .popup-wrapper {
+  padding: 0 0.75rem;
+  display: block;
+}
+.custom-layout .row {
+  min-height: 100%;
+  align-items: stretch;
+}
+.custom-layout .row [class^=col-md-] {
+  display: flex;
+  align-items: center;
+}
+.custom-layout .popup-left-cont {
+  padding-left: 40px;
+}
+.custom-layout .popup-left-cont h5 {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.2px;
+  color: #fff;
+  text-shadow: 4.168px 4.316px 8px rgba(0, 0, 0, 0.22);
+  padding-bottom: 8px;
+}
+.custom-layout .popup-left-cont h6 {
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.2px;
+  color: #fff;
+  text-shadow: 4.168px 4.316px 8px rgba(0, 0, 0, 0.22);
+}
+.custom-layout .popup-left-cont .popupLeftCont-box {
+  background-color: rgb(9, 2, 58);
+  box-shadow: -7.94px 0.975px 18px 0px rgba(0, 0, 0, 0.13);
+  display: block;
+  padding: 30px;
+  letter-spacing: -0.2px;
+}
+.custom-layout .popup-left-cont .popupLeftCont-box span {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.2px;
+  color: #fff;
+  padding-bottom: 3px;
+}
+.custom-layout .popup-left-cont .popupLeftCont-box h4 {
+  color: #eabf12;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.custom-layout .popup-left-form {
+  border-radius: 10px 0 0 10px;
+  background-color: rgb(239, 241, 255);
+  box-shadow: inset 0px 0px 250px 0px rgba(0, 0, 0, 0.11);
+  height: 100%;
+  width: 100%;
+  padding: 80px 30px 60px;
+}
+.custom-layout .popup-left-form h6 {
+  text-align: center;
+  font-size: 33px;
+  font-family: "Poppins";
+  color: rgb(219, 30, 90);
+  line-height: 1.548;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+}
+.custom-layout .popup-left-form h5 {
+  text-align: center;
+  font-weight: 700;
+  color: #2b1252;
+  font-size: 42px;
+  letter-spacing: -0.2px;
+  padding-bottom: 25px;
+}
+.custom-layout .popup-left-form .footerForm-feild input {
+  border-radius: 50px;
+  border-color: rgb(149, 149, 149);
+}
+.custom-layout .popup-left-form .footerForm-feild .icon {
+  color: #db1e5a;
+}
+.custom-layout .popup-left-form .footerForm-btn button {
+  background: #db1e5a;
+  color: #fff;
+  border-radius: 100px;
+}
+
 /*Main Css */
 ::-moz-selection {
   background: #87ceeb;
@@ -251,25 +472,6 @@ i.fas.fa-phone {
 
 .ovr-hiddn {
   overflow: hidden;
-}
-
-.overlay:after {
-  content: "";
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 1;
-}
-
-.overlay {
-  display: none;
-}
-
-.overlay.active {
-  display: block;
 }
 
 .mn-btn {
@@ -1371,7 +1573,8 @@ footer {
   background-repeat: no-repeat;
   padding: 70px 0 40px;
 }
-footer .footer-form h6 {
+
+.footer-form h6 {
   font-size: 50px;
   font-family: "Poppins";
   color: #d20060;
@@ -1379,7 +1582,7 @@ footer .footer-form h6 {
   line-height: 1;
   padding-bottom: 5px;
 }
-footer .footer-form p {
+.footer-form p {
   font-size: 15px;
   font-family: "Poppins";
   color: rgb(255, 255, 255);
@@ -1387,11 +1590,12 @@ footer .footer-form p {
   font-weight: 400;
   padding-bottom: 25px;
 }
-footer .footer-form .footerForm-feild {
+
+.footerForm-feild {
   position: relative;
   margin-bottom: 10px;
 }
-footer .footer-form .footerForm-feild input {
+.footerForm-feild input {
   border-style: solid;
   border-width: 1px;
   border-color: rgb(220, 220, 220);
@@ -1401,10 +1605,10 @@ footer .footer-form .footerForm-feild input {
   width: 100%;
   padding: 20px 20px 20px 50px;
 }
-footer .footer-form .footerForm-feild input.error {
+.footerForm-feild input.error {
   border-color: #f90513;
 }
-footer .footer-form .footerForm-feild .icon {
+.footerForm-feild .icon {
   position: absolute;
   left: 20px;
   top: 0;
@@ -1413,10 +1617,11 @@ footer .footer-form .footerForm-feild .icon {
   color: #c8c8c8;
   height: 16px;
 }
-footer .footer-form .footerForm-btn {
+
+.footerForm-btn {
   padding-top: 20px;
 }
-footer .footer-form .footerForm-btn button {
+.footerForm-btn button {
   display: inline-flex;
   gap: 20px;
   color: #000;
@@ -1429,10 +1634,10 @@ footer .footer-form .footerForm-btn button {
   box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.27);
   transition: all 0.2s ease-in-out;
 }
-footer .footer-form .footerForm-btn button:hover {
+.footerForm-btn button:hover {
   transform: scale(1.05);
 }
-footer .footer-form .footerForm-btn button .icon {
+.footerForm-btn button .icon {
   color: #0b1152;
 }
 

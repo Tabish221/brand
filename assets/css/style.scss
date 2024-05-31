@@ -1,3 +1,5 @@
+@import 'popup';
+
 /*Main Css */
 ::selection{background:#87ceeb;color:#fff;text-shadow:none;}
 ::-webkit-scrollbar{width:10px;background-color:#F5F5F5;}
@@ -70,9 +72,7 @@ i.fas.fa-phone {
 .sprite-icn:before{content:"";background-image:url(../images/sprite.png);background-repeat:no-repeat;display:inline-block;}
 .ovr-hiddn{overflow:hidden;}
 
-.overlay:after{content:"";position:fixed;width:100%;height:100%;left:0;top:0;background:rgba(0,0,0,0.60);z-index:1;}
-.overlay{display:none;}
-.overlay.active{display:block;}
+
 
 .mn-btn{color:#ffffff;font-size:18px;background:#000000;border:1px solid #000000;font-weight:400;text-transform:uppercase;padding:0px 0px;}
 .mn-btn:hover{background:transparent;color:#000000;}
@@ -1285,87 +1285,87 @@ footer{
 	background-repeat: no-repeat;
 	padding: 70px 0 40px;
 
-	.footer-form{
-		h6{
-			font-size: 50px;
-			font-family: "Poppins";
-			color: #d20060;
-			font-weight: 700;
-			line-height: 1;
-			padding-bottom: 5px;	
+}
+
+.footer-form{
+	h6{
+		font-size: 50px;
+		font-family: "Poppins";
+		color: #d20060;
+		font-weight: 700;
+		line-height: 1;
+		padding-bottom: 5px;	
+	}
+	p{
+		font-size: 15px;
+		font-family: "Poppins";
+		color: rgb(255, 255, 255);
+		line-height: 1.4;
+		font-weight: 400;
+		padding-bottom: 25px;
+	}
+
+}
+.footerForm-feild{
+	position: relative;
+	margin-bottom: 10px;
+	
+	input{
+		border-style: solid;
+		border-width: 1px;
+		border-color: rgb(220, 220, 220);
+		border-radius: 5px;
+		background-color: rgb(255, 255, 255);
+		height: 64px;
+		width: 100%;
+		padding: 20px 20px 20px 50px;
+
+		&.error{
+			border-color: #f90513;
 		}
-		p{
-			font-size: 15px;
-			font-family: "Poppins";
-			color: rgb(255, 255, 255);
-			line-height: 1.4;
-			font-weight: 400;
-			padding-bottom: 25px;
-		}
-
-		.footerForm-feild{
-			position: relative;
-			margin-bottom: 10px;
-			
-			input{
-				border-style: solid;
-				border-width: 1px;
-				border-color: rgb(220, 220, 220);
-				border-radius: 5px;
-				background-color: rgb(255, 255, 255);
-				height: 64px;
-				width: 100%;
-				padding: 20px 20px 20px 50px;
-
-				&.error{
-					border-color: #f90513;
-				}
-			}
-			
-			.icon{
-				position: absolute;
-				left: 20px;
-				top: 0;
-				bottom: 0;
-				margin: auto;
-				color: #c8c8c8;
-				height: 16px;
-			}
-		}
-
-		.footerForm-btn{
-			padding-top: 20px;
-
-			button{
-				display: inline-flex;
-				gap: 20px;
-				color: #000;
-				font-size: 20px;
-				font-weight: 600;
-				line-height: 1.2;
-				padding: 20px 45px;
-				border-radius: 3px;
-				background-image: -moz-linear-gradient( 0deg, rgb(255,142,9) 0%, rgb(241,210,0) 100%);
-				background-image: -webkit-linear-gradient( 0deg, rgb(255,142,9) 0%, rgb(241,210,0) 100%);
-				background-image: -ms-linear-gradient( 0deg, rgb(255,142,9) 0%, rgb(241,210,0) 100%);
-				background-image: linear-gradient( 0deg, rgb(255,142,9) 0%, rgb(241,210,0) 100%);
-				box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.27);
-				transition: all 0.2s ease-in-out;
-
-				&:hover{
-					transform: scale(1.05);
-				}
-
-
-				.icon{
-					color: #0b1152;
-				}
-
-			}
-		}
+	}
+	
+	.icon{
+		position: absolute;
+		left: 20px;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		color: #c8c8c8;
+		height: 16px;
 	}
 }
 
+.footerForm-btn{
+	padding-top: 20px;
+
+	button{
+		display: inline-flex;
+		gap: 20px;
+		color: #000;
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 1.2;
+		padding: 20px 45px;
+		border-radius: 3px;
+		background-image: -moz-linear-gradient( 0deg, rgb(255,142,9) 0%, rgb(241,210,0) 100%);
+		background-image: -webkit-linear-gradient( 0deg, rgb(255,142,9) 0%, rgb(241,210,0) 100%);
+		background-image: -ms-linear-gradient( 0deg, rgb(255,142,9) 0%, rgb(241,210,0) 100%);
+		background-image: linear-gradient( 0deg, rgb(255,142,9) 0%, rgb(241,210,0) 100%);
+		box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.27);
+		transition: all 0.2s ease-in-out;
+
+		&:hover{
+			transform: scale(1.05);
+		}
+
+
+		.icon{
+			color: #0b1152;
+		}
+
+	}
+}
 .copyright{
 	padding: 30px 0;
 	background-color: #000;

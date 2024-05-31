@@ -49,7 +49,7 @@
 							</a>
 						</div>
 						<div class="head-btn">
-							<a href="#">
+							<a href="#" class="custom-popupBtn">
 								<span>
 									<div class="icon"><i class="fas fa-edit"></i></div>
 									GET IN TOUCH
